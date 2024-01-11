@@ -21,6 +21,9 @@ const buttonClear = document.querySelector(".setting .clear");
 
 buttonSize.addEventListener("click", () => {
     size = prompt("Enter the size of sketch pad");
+    if (size > 100) {
+	return;
+    }
 
     const boxList = Array.from(draw.childNodes);
 

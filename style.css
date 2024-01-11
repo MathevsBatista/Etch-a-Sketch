@@ -23,6 +23,10 @@ header {
     border-color: #E5E3E2ff;
 }
 
+header h1 {
+    margin: 10px;
+}
+
 footer {
     border-top-style: solid;
     border-top-width: 1px;
@@ -35,6 +39,8 @@ main {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+
+    margin: 40px auto;
 }
 
 .draw {

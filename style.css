@@ -1,8 +1,40 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
     background-color: #f6f5f4;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+}
+
+header {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #E5E3E2ff;
+}
+
+footer {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-color: #E5E3E2ff;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
 .draw {
@@ -23,3 +55,16 @@ main {
 .mark {
     background-color: black;
 }
+
+@media only screen and (max-width: 620px) {
+    .draw {
+	width: 300px;
+	height: 300px;
+    }
+
+    .box {
+	width: calc(300px/16);
+	height: calc(300px/16);
+    }
+}
+
